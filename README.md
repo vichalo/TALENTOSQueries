@@ -1,5 +1,7 @@
-# TALENTOSQueries :)
-public static int codigo1() {
+# TALENTOSQueries
+
+
+   public static int codigo1() {
         //TO-DO
         Query query = session1.createQuery("SELECT COUNT(m.idModulo) from ModuloEntity m");
         long x  = (long) query.getResultList().get(0);
@@ -9,9 +11,7 @@ public static int codigo1() {
         //TO-DO
         Query query = session1.createQuery("SELECT DISTINCT (e.idModul) from ExamenEntity e where e.idModul > 0");
         int x  = query.getResultList().size();
-        return x;
-
-    }
+        return x; }
     public static int codigo3() {
         //TO-DO
         Query query = session1.createQuery("SELECT ROUND(AVG(e.nota),0) FROM ExamenEntity e JOIN ModuloEntity m WHERE m.id = e.idModul AND m.nombre LIKE '%PRG%'");
