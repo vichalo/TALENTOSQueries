@@ -1,6 +1,6 @@
 # TALENTOSQueries
 
-
+```java
    public static int codigo1() {
         //TO-DO
         Query query = session1.createQuery("SELECT COUNT(m.idModulo) from ModuloEntity m");
@@ -26,4 +26,4 @@
     }
     
     El codi es 6473
-    :)
+    ```
